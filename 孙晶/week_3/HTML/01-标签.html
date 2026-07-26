@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1级标题</h1>
+    <h2>2级标题</h2>
+    <hr>
+    <h3>3级标题</h3>
+    <h4>4级标题</h4>
+    <h5>5级标题</h5>
+    <h6>6级标题</h6>
+    <hr>
+    <p>
+    风穿过街巷，带着草木淡淡的清香。<br>阳光慢慢洒落，落在窗台、道路和行人肩头。不必追赶匆忙的脚步，静下心来，便能看见平凡日子里藏着的温柔与光亮。时光缓缓，愿我们保持热爱，从容前行。
+    </p>
+    <b>加粗</b>
+    <strong>加粗</strong>
+    <u>下划线</u>
+    <ins>下划线</ins>
+    <i>倾斜</i>
+    <em>倾斜</em>
+    <s>删除线</s>
+    <del>删除线</del>
+    <!-- alt:替换文本，当图片不显示的时候显示的文字 -->
+    <!-- title:这是title文字，鼠标悬停的时候显示 -->
+    <!-- width和height属性只需要给出一个值，另一个等比例放缩 -- 好处就是图品不变形 -->
+
+    <!-- 同级目录 -->
+    <img src="`(6C69D)_爱给网_aigei_com.gif" alt="这是一只狗" title="狗狗" width="200">
+    <img src="./`(6C69D)_爱给网_aigei_com.gif" alt="这是一只狗" title="狗狗" height="200">
+    <!-- 下级目录 -->
+    <img src="image/1.gif">
+    <!-- src 音频的路径   controls 显示播放的控件  loop 循环播放  autoplay 自动播放(很多浏览器不支持) -->
+    <audio src="alexzavesa-calm-elegant-logo-519008.mp3" controls loop></audio>
+    <video src="364251_medium.mp4" controls width="200"></video>
+
+    <!-- 超链接 #(空链接) -->
+    <!-- target 正常默认_self覆盖原网页 _blank在新窗口中跳转 -->
+    <a href="https://www.baidu.com/" target="_blank">跳转到百度</a>
+    <br>
+    <a href="./html骨架.html" target="_self">挑战</a>lie'biao
+
+
+    <!-- 无序列表 -->
+     <ul>
+        <li>榴莲</li>
+        <li>香蕉</li>
+        <li>苹果</li>
+     </ul>
+
+    <!-- 有序列表 -->
+      <ol>
+        <li>张三：100</li>
+        <li>李四：80</li>
+      </ol>
+
+      <!-- 自定义列表 -->
+       <dl>
+        <dt>帮助中心</dt>
+        <dd>账户管理</dd>
+        <dd>购物指南</dd>
+        <dt>服务支持</dt>
+        <dd>售后政策</dd>
+        <dd>自助服务</dd>
+       </dl>
+    
+    <!-- table包含tr，tr包含td tr包含th(表头标签)-->
+    <!-- 属性 border边框宽度 width表格宽度 height表格高度  实际开发中表格样式用css -->
+    <table border="1" width="500" height="300">
+        <!-- caption标题标签  -->
+        <caption><strong>学生成绩单</strong></caption>
+        <!-- 结构标签thead表格头部 tbody表格主体 tfoot表格底部 -->
+        <!-- 左上原则 rowspan跨行合并 colspan跨列合并 不能跨结构标签 -->
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小哥哥</td>
+                <td rowspan="2">100</td>
+                <td>真棒</td>
+            </tr>
+            <tr>
+                <td>小果果</td>
+                <td>相声</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td colspan="2">郎才女貌</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- form是表单域标签，管理提交和重置的范围 -->
+    <form action="">
+        <!-- 表单 placeholder占位符 -->
+         <!-- input输入 -->
+        文本框：<input type="text" placeholder="请输入用户名"><br>
+        密码框：<input type="password" placeholder="请输入密码"><br>
+        <!-- name 分组 checked 默认选中-->
+        单选框：<input type="radio" name="sex">男 <input type="radio" name="sex" checked>女<br>
+        多选框：<input type="checkbox" checked>我同意注册<br>
+        <!-- multiple 上传多个 -->
+        上传文件：<input type="file" multiple>
+        <!-- 按钮 -->
+         <!-- input按钮 -->
+        <input type="submit" value="免费注册">
+        <input type="reset">
+        <input type="button" value="普通按钮">
+        <!-- button按钮 -->
+        <button>我是按钮</button>
+        <button type="submit">提交按钮</button>
+        <button type="reset">重置按钮</button>
+        <button type="button">普通按钮</button>
+    </form>
+    <!-- 下拉菜单 -->
+    <select name="" id="">
+    <option value="">北京</option>
+    <option selected>上海</option>
+    </select>
+    <!-- 文本域标签 -->
+    <textarea cols="10" rows="1"></textarea>
+    <!-- lable标签 -->
+    性别：
+    <input type="radio" name="sex" id="nan" > <label for="nan">男</label>
+    <label><input type="radio" name="sex"> 女</label>
+
+    <!-- 没有语义标签 -->
+    <div>div</div>
+    <div>div</div>
+    <span>span</span>
+    <span>span</span>
+    <!-- 有语义布局标签 手机端了解-->
+    <head>网页头部</head> <nav>网页导航</nav> <footer>网页底部</footer>
+    <aside>网页侧边栏</aside> <section>网页区块</section> <article>网页文章</article>
+    <!-- 字符实体 -->
+    中&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文    a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c
+
+</body>
+</html>
