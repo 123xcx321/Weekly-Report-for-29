@@ -1,0 +1,9 @@
+sky:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: sky_take_out
+    username: root
+    # 密码优先从环境变量 SKY_DB_PASSWORD 读取；未设置时回退到本地默认值，防止真实密码提交到仓库
+    password: ${SKY_DB_PASSWORD:1234}
